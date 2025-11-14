@@ -92,8 +92,8 @@ def read_data(fname):
     return joint_data, tf_data, gripper_data
 
 if __name__ == '__main__':
-    path = '/Users/wendy/Desktop/school/uml/robotics/auto_correlation/raw data/fetch_table_demos/xyz data/full_tasks/fetch_recorded_demo_1730997119.txt'
-    h5_path = '/Users/wendy/Desktop/school/uml/robotics/auto_correlation/raw data/fetch_table_demos/h5 files/fetch_recorded_demo_1730997119.h5'
+    path = "../table task/xyz data/full_tasks/fetch_recorded_demo_1730997119.txt"
+    h5_path = "../table task/h5 files/fetch_recorded_demo_1730997119.h5"
     data = np.loadtxt(path)  # load the file into an array
 
     x = data[:, 0]
